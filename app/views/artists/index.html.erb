@@ -1,0 +1,9 @@
+<h1>MixMaster Artists</h1>
+<%= link_to "New Artist", new_artist_path %>
+<ol>
+<% @artists.each do |artist| %>
+    <li>
+      <%= link_to artist.name, artist_path(artist) %>
+    </li>
+<% end %>
+</ol>
